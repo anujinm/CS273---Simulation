@@ -42,7 +42,7 @@ public:
 					the_queue.pop();
 
 					// FIXME: calculate the wait time
-					int wait_time = plane->ready_takeoff_time - plane->enter_departure_time;
+					int wait_time = clock - plane->enter_departure_time;
 
 					// FIXME: update total_wait and num_served
 					total_wait += wait_time;
